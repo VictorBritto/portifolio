@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap');
+
+body{
+    background-color: #181818;
+    color: white;
+    font-family: Teko, serif;
+}
+
+.container {
+    display: flex;
+    max-width: 900px;
+    width: 100%;
+    height: 80vh; /* Adicionado para garantir que ocupe toda a altura da tela */
+    align-items: center;  /* Alinha verticalmente no centro */
+    justify-content: center; /* Alinha horizontalmente no centro */
+    margin: 0 auto; /* Centraliza o container na página */
+  }
+  
+  .text-content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Alinha o conteúdo interno (como título e texto) no centro verticalmente */
+  }
+  
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  p {
+    color: #aaa;
+    margin-top: 10px;
+  }
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  .image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Alinha a imagem horizontalmente no centro */
+    align-items: center; /* Alinha a imagem verticalmente no centro */
+  }
+  
+  .image-content img {
+    width: 80%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 1rem rgba(255, 255, 255, 0.212));
+    box-shadow: 1px 1px 1rem rgba(255, 255, 255, 0.288);
+  }
+
+  .stock-tricker {
+    font-size: 30px;
+    letter-spacing: 4px;
+    border-bottom: 1px solid #000;
+    display: flex;
+    overflow: hidden; /* Impede que o conteúdo transborde */
+  }
+  
+  .stock-tricker ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    animation: scroll 30s ease-in-out infinite; /* Aumentei o tempo e adicionei 'ease-in-out' para suavizar */
+  }
+  
+  .stock-tricker ul li {
+    white-space: nowrap; /* Impede quebra de linha nos itens */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%); /* Começa fora da tela à direita */
+    }
+    50% {
+      transform: translateX(0); /* Chega ao centro */
+    }
+    100% {
+      transform: translateX(-100%); /* Vai até fora da tela à esquerda */
+    }
+  }
+  
+  
+  .stock-tricker .minha, .stock-tricker .carreira{
+    font-weight: bold;
+  }

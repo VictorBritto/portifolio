@@ -1,0 +1,43 @@
+ul{
+    padding: 0;
+    display: flex;
+    gap: 30%;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 20%;
+    justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+#text1{
+    text-decoration: none;
+    color: #e6e6e6;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 400;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#text1:hover{
+    color: #D1D1D1; /* Muda a cor ao passar o mouse */
+}
+
+nav div {
+    display: flex;
+    letter-spacing: 1px;
+    width: 100%;
+    justify-content: space-between; /* Mantém tudo na mesma linha */
+}
+
+#title{
+    color: #e6e6e6;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 24%;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+#title:hover{
+    color: #D1D1D1;
+    cursor: pointer;
+}
