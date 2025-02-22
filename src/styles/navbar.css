@@ -1,14 +1,21 @@
-ul{
-    padding: 0;
+nav {
     display: flex;
-    gap: 30%;
-    list-style: none;
-    margin-top: 30px;
-    margin-right: 20%;
-    justify-content: flex-end; /* Alinha os itens à direita */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-#text1{
+ul {
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 5%;
+    justify-content: flex-end;
+}
+
+#text1 {
     text-decoration: none;
     color: #e6e6e6;
     text-transform: uppercase;
@@ -17,27 +24,47 @@ ul{
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
-#text1:hover{
-    color: #D1D1D1; /* Muda a cor ao passar o mouse */
+#text1:hover {
+    color: #D1D1D1;
 }
 
 nav div {
     display: flex;
     letter-spacing: 1px;
     width: 100%;
-    justify-content: space-between; /* Mantém tudo na mesma linha */
+    justify-content: space-between;
 }
 
-#title{
+#title {
     color: #e6e6e6;
     text-transform: uppercase;
     font-size: 30px;
     font-weight: 400;
-    margin-left: 24%;
+    margin-left: 5%;
     transition: color 0.3s ease, transform 0.2s ease;
 }
 
-#title:hover{
+#title:hover {
     color: #D1D1D1;
     cursor: pointer;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-right: 0;
+    }
+    
+    #title {
+        margin-left: 0;
+        text-align: center;
+    }
 }
