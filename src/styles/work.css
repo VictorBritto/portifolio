@@ -1,0 +1,50 @@
+.expe{
+    display: flex;
+    justify-self: center;
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* centraliza os cards na horizontal */
+    gap: 24px;               /* espaço entre os cards */
+    margin-top: 50px;
+  }
+
+  .card1{
+    width: 180px;
+    height: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 16px;
+    background-color: #242424;
+    box-shadow: 1px 4px 14px #000000a2;
+    color: white;
+  }
+
+  .card2{
+    width: 40%;
+    height: 260px;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 16px;
+    background-color: #242424;
+    box-shadow: 1px 4px 14px #000000a2;
+    color: white;
+  }
+
+  .card1 h1{
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+  .card2 h1{
+    margin-top: 40px;
+    font-size: 20px;
+  }
+
+
+  .card p{
+    font-size: 16px;
+  }

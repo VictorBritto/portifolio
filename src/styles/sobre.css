@@ -1,0 +1,43 @@
+.sobre-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #262626; /* Fundo escuro */
+    color: #fff;
+    padding: 20px;
+    min-height: 70vh;
+    font-family: Arial, sans-serif;
+    margin-top: 60px;
+  }
+  
+  .sobre-card {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    gap: 3rem;
+  }
+    
+  .profile-image {
+    width: 304px;
+    height: 456px;
+    border-radius: 10%; 
+    object-fit: cover;
+  }
+  
+  .sobre-text {
+    flex: 1;
+  }
+  
+  .sobre-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .sobre-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #ccc;
+  }

@@ -1,0 +1,28 @@
+.tec{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 16%;
+    font-size: 20px;
+}
+
+.linguagens {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  gap: 50px;
+  margin-top: 80px;             
+}
+
+.linguagens img {
+  width: 60px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.linguagens img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+  
